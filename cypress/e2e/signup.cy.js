@@ -47,7 +47,7 @@ describe("ALW Sign Up", () => {
 
     // Generate a random number with 3 at start
     function generateNumber() {
-      return Math.trunc("3" + (Math.random() * 100000000000 + 1));
+      return Math.trunc("3" + Math.random() * 1000000000);
     }
     let num = generateNumber();
     
