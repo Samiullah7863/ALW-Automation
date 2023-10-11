@@ -1,6 +1,8 @@
 
 // Command to Login with Email and Password
 Cypress.Commands.add("login", (email, password) => {
+
+  // API to Check Login Response
   cy.intercept(
     "POST",
     "https://lms-" + Cypress.env('server') + "/api/mentora/auth/alw-login/"
@@ -50,6 +52,15 @@ Cypress.Commands.add("loginWithNumber", (number) => {
     }
   });
 });
+
+
+
+
+
+
+
+
+
 
 // Upper Grade Sign Up
 Cypress.Commands.add("signup", () => {
